@@ -46,4 +46,8 @@ internal interface IDirectories
     void SetLastAccessTimeUtc(string path, DateTime lastAccessTimeUtc);
     void SetLastWriteTime(string path, DateTime lastWriteTime);
     void SetLastWriteTimeUtc(string path, DateTime lastWriteTimeUtc);
+
+
+    string GetEnvironmentFolderPath(Environment.SpecialFolder folder);
+    string GetEnvironmentFolderPath(Environment.SpecialFolder folder, Environment.SpecialFolderOption option);
 }

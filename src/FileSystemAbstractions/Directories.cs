@@ -86,4 +86,10 @@ partial class Directories : IDirectories
          => Directory.SetLastWriteTime(path, lastWriteTime);
     public void SetLastWriteTimeUtc(string path, DateTime lastWriteTimeUtc)
          => Directory.SetLastWriteTimeUtc(path, lastWriteTimeUtc);
+
+    public string GetEnvironmentFolderPath(Environment.SpecialFolder folder)
+    => Environment.GetFolderPath(folder);
+    public string GetEnvironmentFolderPath(Environment.SpecialFolder folder, Environment.SpecialFolderOption option)
+        => Environment.GetFolderPath(folder, option);
+
 }
