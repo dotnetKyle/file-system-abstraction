@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace FileSystemAbstraction;
+namespace System.IO.FileSystemAbstractions;
 
 public class FileSystem : IFileSystem
 {

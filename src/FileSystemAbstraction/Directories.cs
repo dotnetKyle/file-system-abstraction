@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace FileSystemAbstraction;
+namespace System.IO.FileSystemAbstractions;
 
 partial class Directories : IDirectories
 {
