@@ -18,6 +18,7 @@ public interface IFileSystem
     FileStream Create(string path, int bufferSize, FileOptions fileOptions);
     StreamWriter CreateText(string path);
     void Delete(string path);
+    bool Exists(string path);
     void Move(string sourceFileName, string destinationFileName);
     string ReadAllText(string path);
     void WriteAllBytes(string path, byte[] bytes);

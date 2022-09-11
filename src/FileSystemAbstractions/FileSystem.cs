@@ -6,6 +6,9 @@ namespace System.IO.FileSystemAbstractions;
 
 public class FileSystem : IFileSystem
 {
+    public bool Exists(string path)
+        => File.Exists(path);
+
     public FileStream Create(string path)
         => File.Create(path);
     public FileStream Create(string path, int bufferSize)
