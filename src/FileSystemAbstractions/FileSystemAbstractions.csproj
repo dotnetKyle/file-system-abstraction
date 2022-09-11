@@ -4,6 +4,29 @@
       <TargetFramework>netstandard2.0</TargetFramework>
 	  <LangVersion>latest</LangVersion>
 	  <Nullable>enable</Nullable>
+
+	  <Description>A C# file system abstraction for IoC against the 
+file system, helpful for unit testing.  You can 
+build mock file systems by using the IFileSystem 
+interface or IDirectories interface.</Description>
+
+	  <Title>File System Abstractions</Title>
+
+	  <Authors>dotnetKyle</Authors>
+
+	  <RepositoryUrl>https://github.com/dotnetKyle/file-system-abstraction</RepositoryUrl>
+
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+
+	  <PackageTags>File System, Directory, Directories, Unit Test, File System Abstractions, Directory Abstractions</PackageTags>
+	  
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
