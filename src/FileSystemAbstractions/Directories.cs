@@ -4,7 +4,7 @@ using System.IO;
 
 namespace System.IO.FileSystemAbstractions;
 
-partial class Directories : IDirectories
+public class Directories : IDirectories
 {
     public DirectoryInfo CreateDirectory(string path)
          => Directory.CreateDirectory(path);

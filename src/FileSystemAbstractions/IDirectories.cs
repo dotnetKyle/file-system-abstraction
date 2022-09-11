@@ -4,7 +4,7 @@ using System.IO;
 
 namespace System.IO.FileSystemAbstractions;
 
-internal interface IDirectories
+public interface IDirectories
 {
     DirectoryInfo CreateDirectory(string path);
     void Delete(string path);
